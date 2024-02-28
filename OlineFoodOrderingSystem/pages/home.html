@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="../style.css"> 
+	<link
+	href="https://fonts.googleapis.com/css2? 
+	family=Ubuntu+Mono&display=swap" 
+	rel="stylesheet">	 
+</head> 
+
+<body > 
+
+	<header class="mycolumn">
+        <div class=" mycolumn2">
+       
+        
+        <img src="../images/logo.png", class="logo"> 
+		
+		<h2 id="top">CODE FOODS  </h2> 
+ </div>
+
+	
+	
+	<nav id="navbar"> 
+		
+			<a href="home.html">Home<span style="padding-left: 5%;">|</span></a>
+			<a href="about.html">About<span style="padding-left: 5%;">|</span></a>
+			<a href="menu.html">Menu<span style="padding-left: 5%;">|</span></a>
+			<a href="contact.html">ContactUs</a>
+		</ul> 
+	</nav>
+
+</header> 
+<div class="column3">
+	<div class="row1"> 
+        
+		<div class="welcome">
+			<h1>Welcome to <BR><span style=" color:orange;font-size:larger;font-family:cursive">Code Foods</span> </h1>
+				<p>Get ride of hungry as you get your delivery</p>
+		</div>
+		<button class="order">ORDER NOW</button> 
+    </div>
+
+        
+<div class="row2">
+
+	
+		 
+	
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img src="../images/drinks.jpg" class="slide1" >
+  <div class="text">DRINKS</div>
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext"  >2 / 3</div> -->
+  <img src="../images/food.jpg"class="slide1">
+  <div class="text">FASTFOODS</div>
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img src="../images/dr1.jpg"class="slide1" >
+  <div class="text">SOFT DRINKS</div>
+  
+
+	
+</div>
+
+
+</div>
+<div class="do">
+<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span>
+		</div>
+</div>
+</div>
+
+<!-- 
+		<div id="container3"> 
+			<div id="row4"> 
+				<button class="btn">Prices</button> 
+			</div> 
+			<div id="row3"> 
+				<button class="btn">Specials</button> 
+			</div> 
+		</div>  -->
+<!-- 	
+	<hr> 
+	<h1 id="top3">Featured Products</h1>  -->
+ 
+	<div>
+	<footer style="text-align: center;color: grey;">Copyright © 2023 CodeFoods. 
+		All Rights are reserved</footer> 
+	</div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+</body> 
+</html> 
